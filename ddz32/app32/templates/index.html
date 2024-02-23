@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome</h1>
+<a href="{% url 'create' %}">create post</a>
+{% for post in sign_posts %}
+	<h5>{{ post }}</h5>
+{% endfor %}
+
+{% for message in messages %}
+	<p>{{ message }}</p>
+{% endfor %}
+
+</body>
+</html>
